@@ -82,7 +82,7 @@
         Article.loadAll(rows);
         next();
       } else {
-        $.getJSON('/data/hackerIpsum.json', function(rawData) {
+        $.getJSON('data/hackerIpsum.json', function(rawData) {
           rawData.forEach(function(item) {
             var article = new Article(item);
             article.insertRecord();
